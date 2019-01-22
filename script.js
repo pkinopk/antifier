@@ -1,13 +1,5 @@
 new ClipboardJS('.copy');
 
-const userAction = async () => {
-  const response = await fetch('https://pkinopk-server.herokuapp.com/recipe-book/recipelist');
-  const myJson = await response.json(); //extract JSON from the http response
-  console.log(myJson);
-};
-
-// userAction();
-
 $('.copy').on('click', function() {
   $('.copy').animate(
     {
@@ -27,7 +19,7 @@ $('.copy').on('click', function() {
 });
 
 $('.antify').on('click', function() {
-  var serverURL = 'http://localhost:8000/antifier/';
+  var serverURL = 'https://pkinopk-server.herokuapp.com/antifier/';
 
   console.log($('#originalURL')[0].value);
 
