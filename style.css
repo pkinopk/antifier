@@ -83,7 +83,6 @@ input {
   color: #6d1215;
   word-wrap: break-word;
   margin: 0;
-  font-size: 80%;
 }
 
 .antified-link,
@@ -101,7 +100,8 @@ input {
 
 .link small {
   position: relative;
-  bottom: -0.7em;
+  bottom: -0.5em;
+  font-size: 100%;
 }
 
 .copy {
@@ -147,6 +147,21 @@ footer a {
 
   .antify img {
     width: 35px;
+  }
+
+  .link small,
+  .invalid-link,
+  .original-link,
+  .antified-link,
+  .antified-link a {
+    font-size: 24px;
+  }
+
+  .copy {
+    font-size: 100%;
+    padding: 4px 11px 4px 11px;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 14px;
   }
 
   footer {
