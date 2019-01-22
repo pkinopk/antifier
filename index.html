@@ -1,15 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Antifier</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>MY URL</title>
-</head>
+  <body>
+    <div class="container">
+      <h1>Antifier</h1>
 
-<body>
+      <div class="main">
+        <input type="text" name="OriginalURL" placeholder="Paste your link here" id="originalURL" />
+        <button type="submit" class="antify"><img src="img/ant-white.png" alt="ant" /> Antify</button>
+        <div class="links"></div>
+      </div>
 
-</body>
-
+      <footer>
+        © 2019 Paulo Kinopk
+        <a href="http://pkinopk.github.io/portfolio/" target="_black">pkinopk.github.io/portfolio/</a>
+      </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
